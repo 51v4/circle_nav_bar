@@ -216,7 +216,7 @@ class _CircleNavBarState extends State<CircleNavBar>
                           height: double.infinity,
                           color: Colors.transparent,
                           alignment: Alignment.center,
-                          child: widget.activeIndex == currentIndex ? null : e,
+                          child: e,
                         ),
                       ));
                     }).toList(),
