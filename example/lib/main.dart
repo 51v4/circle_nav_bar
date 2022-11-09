@@ -29,7 +29,8 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateMixin {
+class _MyHomePageState extends State<MyHomePage>
+    with SingleTickerProviderStateMixin {
   int _tabIndex = 1;
   int get tabIndex => _tabIndex;
   set tabIndex(int v) {
@@ -61,6 +62,12 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
           Text("Like"),
         ],
         color: Colors.white,
+        gradient: const LinearGradient(
+          colors: [
+            Colors.cyan,
+            Colors.cyan,
+          ],
+        ),
         height: 60,
         circleWidth: 60,
         activeIndex: tabIndex,
@@ -84,9 +91,18 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
           tabIndex = v;
         },
         children: [
-          Container(width: double.infinity, height: double.infinity, color: Colors.red),
-          Container(width: double.infinity, height: double.infinity, color: Colors.green),
-          Container(width: double.infinity, height: double.infinity, color: Colors.blue),
+          Container(
+              width: double.infinity,
+              height: double.infinity,
+              color: Colors.red),
+          Container(
+              width: double.infinity,
+              height: double.infinity,
+              color: Colors.green),
+          Container(
+              width: double.infinity,
+              height: double.infinity,
+              color: Colors.blue),
         ],
       ),
     );
