@@ -22,7 +22,6 @@ class CircleNavBar extends StatefulWidget {
   ///   circleWidth: 60,
   ///   activeIndex: 1,
   ///   onTab: (v) {
-  ///     // TODO
   ///   },
   ///   padding: const EdgeInsets.only(left: 16, right: 16, bottom: 20),
   ///   cornerRadius: const BorderRadius.only(
